@@ -4,7 +4,8 @@ A modern, responsive, and professional portfolio website showcasing my skills, p
 
 ## 🚀 Live Demo
 
-🔗 Live Website: https://yourusername.github.io/tejashri-patil-portfolio/
+🔗 Live Website:https://tejupatil015.github.io/tejashri-portfolio/
+
 
 ## 📌 Features
 
