@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Tejashri Patil – Electronics & Telecommunication Engineering Student, Aspiring Software Engineer & Web Developer. Portfolio showcasing projects, skills, and achievements." />
+  <meta name="keywords" content="Tejashri Patil, Web Developer, Software Engineer, React.js, JavaScript, Python, Portfolio" />
+  <meta name="author" content="Tejashri Patil" />
+  <title>Tejashri Patil | Software Engineer & Web Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===================== LOADING SCREEN ===================== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">TP</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Tejashri<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+          <i class="fas fa-moon" id="themeIcon"></i>
+        </button>
+        <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+          Hire Me
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-blob hero-blob-1"></div>
+    <div class="hero-blob hero-blob-2"></div>
+    <div class="hero-blob hero-blob-3"></div>
+
+    <div class="container hero-container">
+      <!-- Profile Image -->
+      <div class="hero-image reveal-left">
+        <div class="hero-image-wrapper">
+          <div class="profile-placeholder">
+            <div class="profile-initials">TP</div>
+            <div class="profile-ring ring-1"></div>
+            <div class="profile-ring ring-2"></div>
+            <div class="profile-ring ring-3"></div>
+          </div>
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Available for Internship
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Content -->
+      <div class="hero-content reveal-right">
+        <div class="hero-tag">
+          <i class="fas fa-code"></i> Electronics & Telecom Engineering
+        </div>
+        <h1 class="hero-name">
+          Hi, I'm <span class="gradient-text">Tejashri Patil</span>
+        </h1>
+        <div class="hero-role">
+          <span>I build </span>
+          <span class="typing-wrapper">
+            <span id="typing-text" class="typing-text"></span>
+            <span class="cursor">|</span>
+          </span>
+        </div>
+        <p class="hero-summary">
+          Aspiring Software Engineer with hands-on experience in Java, Python, JavaScript, and React.js.
+          Built <strong>10+ web applications</strong>, contributed to the Mizu platform reaching
+          <strong>2,500+ active users</strong> in 12 days. Passionate about clean code, real-world impact,
+          and building products that matter.
+        </p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="10">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="2500">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Users Reached</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="5000">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Lines of Code</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#" class="btn btn-primary" id="downloadBtn">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">
+            <i class="fas fa-envelope"></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="mailto:patil.t.tejashri@gmail.com" class="social-link" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="https://linkedin.com/in/patiltejashree/" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://mizu.co.in" target="_blank" rel="noopener" class="social-link" aria-label="Website">
+            <i class="fas fa-globe"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-dot"></div>
+      </div>
+      <span>Scroll to explore</span>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT SECTION ===================== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <p class="section-subtitle">Turning ideas into elegant digital experiences</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-card glass-card reveal-left">
+          <div class="about-icon-wrap">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Who I Am</h3>
+          <p>
+            I'm Tejashri Patil, a passionate Electronics & Telecommunication Engineering student at
+            Sanjay Ghodawat University, Kolhapur. I blend core engineering fundamentals with modern
+            software development to create impactful digital solutions.
+          </p>
+          <p>
+            My journey in tech spans from building frontend interfaces with React.js to working on
+            Python-based healthcare systems with OCR and ML integration. I believe in writing clean,
+            purposeful code that solves real problems.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal">
+          <div class="about-icon-wrap accent">
+            <i class="fas fa-bullseye"></i>
+          </div>
+          <h3>Career Objective</h3>
+          <p>
+            Seeking software engineering and backend development internships where I can apply my
+            full-stack skills in real-world environments. My goal is to contribute to meaningful
+            products while continuously growing as a developer through collaborative engineering teams.
+          </p>
+          <p>
+            I aim to bridge the gap between electronics engineering and software development,
+            bringing a unique perspective to every project I work on.
+          </p>
+        </div>
+
+        <div class="about-card glass-card reveal-right">
+          <div class="about-icon-wrap secondary">
+            <i class="fas fa-star"></i>
+          </div>
+          <h3>Core Strengths</h3>
+          <ul class="strength-list">
+            <li><i class="fas fa-check-circle"></i> Full-stack web development with React.js</li>
+            <li><i class="fas fa-check-circle"></i> REST API integration & backend architecture</li>
+            <li><i class="fas fa-check-circle"></i> Python & Machine Learning basics</li>
+            <li><i class="fas fa-check-circle"></i> Rapid prototyping in hackathons</li>
+            <li><i class="fas fa-check-circle"></i> Cross-functional team collaboration</li>
+            <li><i class="fas fa-check-circle"></i> OOP principles & Git-based version control</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Personal Info Cards -->
+      <div class="info-grid reveal">
+        <div class="info-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <span class="info-label">Location</span>
+            <span class="info-value">Kolhapur, Maharashtra</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-graduation-cap"></i>
+          <div>
+            <span class="info-label">Degree</span>
+            <span class="info-value">B.Tech – E&TC Engineering</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-university"></i>
+          <div>
+            <span class="info-label">University</span>
+            <span class="info-value">Sanjay Ghodawat University</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span class="info-label">Email</span>
+            <span class="info-value">patil.t.tejashri@gmail.com</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-phone"></i>
+          <div>
+            <span class="info-label">Phone</span>
+            <span class="info-value">+91 7972347936</span>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-briefcase"></i>
+          <div>
+            <span class="info-label">Status</span>
+            <span class="info-value available">Open to Opportunities</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EDUCATION SECTION ===================== -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <p class="section-subtitle">Building knowledge, one milestone at a time</p>
+      </div>
+
+      <div class="timeline">
+        <!-- B.Tech -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot primary"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="edu-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-year">2024 – 2028 (Expected)</span>
+                <span class="timeline-badge current">Current</span>
+              </div>
+            </div>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <h4>Electronics & Telecommunication Engineering</h4>
+            <p class="edu-institution">
+              <i class="fas fa-building"></i> Sanjay Ghodawat University, Kolhapur
+            </p>
+            <div class="edu-cgpa">
+              <span class="cgpa-label">CGPA</span>
+              <div class="cgpa-bar-wrap">
+                <div class="cgpa-bar" data-width="75"></div>
+              </div>
+              <span class="cgpa-value">7.5+</span>
+            </div>
+            <div class="edu-tags">
+              <span class="edu-tag">Electronics</span>
+              <span class="edu-tag">Telecommunications</span>
+              <span class="edu-tag">Embedded Systems</span>
+              <span class="edu-tag">Microprocessors</span>
+              <span class="edu-tag">Signal Processing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HSC -->
+        <div class="timeline-item right reveal-right">
+          <div class="timeline-dot secondary"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="edu-icon secondary">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-year">Completed 2024</span>
+                <span class="timeline-badge completed">Completed</span>
+              </div>
+            </div>
+            <h3>Higher Secondary Certificate (HSC)</h3>
+            <h4>Science Stream – Physics, Chemistry, Mathematics</h4>
+            <p class="edu-institution">
+              <i class="fas fa-building"></i> Maharashtra State Board
+            </p>
+            <div class="edu-tags">
+              <span class="edu-tag">Physics</span>
+              <span class="edu-tag">Chemistry</span>
+              <span class="edu-tag">Mathematics</span>
+              <span class="edu-tag">Science</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SSC -->
+        <div class="timeline-item reveal-left">
+          <div class="timeline-dot accent"></div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-header">
+              <div class="edu-icon accent">
+                <i class="fas fa-book"></i>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-year">Completed 2022</span>
+                <span class="timeline-badge completed">Completed</span>
+              </div>
+            </div>
+            <h3>Secondary School Certificate (SSC)</h3>
+            <h4>General Education</h4>
+            <p class="edu-institution">
+              <i class="fas fa-building"></i> Maharashtra State Board
+            </p>
+            <div class="edu-tags">
+              <span class="edu-tag">Science</span>
+              <span class="edu-tag">Mathematics</span>
+              <span class="edu-tag">English</span>
+              <span class="edu-tag">Social Studies</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SKILLS SECTION ===================== -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <p class="section-subtitle">Technologies and tools I work with</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="skills-card glass-card reveal-left">
+          <div class="skills-card-header">
+            <div class="skills-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3>Technical Skills</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-html5 html"></i> HTML5</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-css3-alt css"></i> CSS3</span>
+                <span class="skill-pct">85%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-js js"></i> JavaScript</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-react react"></i> React.js</span>
+                <span class="skill-pct">78%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-python python"></i> Python</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-java java"></i> Java</span>
+                <span class="skill-pct">70%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fab fa-git-alt git"></i> Git / GitHub</span>
+                <span class="skill-pct">82%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-mobile-alt"></i> Responsive Design</span>
+                <span class="skill-pct">88%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Electronics Skills -->
+        <div class="skills-card glass-card reveal">
+          <div class="skills-card-header">
+            <div class="skills-icon secondary">
+              <i class="fas fa-microchip"></i>
+            </div>
+            <h3>Core Electronics</h3>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-wave-square"></i> Digital Electronics</span>
+                <span class="skill-pct">80%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="80"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-bolt"></i> Analog Electronics</span>
+                <span class="skill-pct">72%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="72"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-broadcast-tower"></i> Communication Systems</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-cpu"></i> Microprocessors</span>
+                <span class="skill-pct">68%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-project-diagram"></i> Embedded Systems</span>
+                <span class="skill-pct">65%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span><i class="fas fa-brain"></i> Machine Learning Basics</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar"><div class="skill-fill secondary" data-width="60"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skills-card glass-card reveal-right">
+          <div class="skills-card-header">
+            <div class="skills-icon accent">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Soft Skills</h3>
+          </div>
+          <div class="soft-skills-grid">
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-comments"></i></div>
+              <span>Communication</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-handshake"></i></div>
+              <span>Teamwork</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-crown"></i></div>
+              <span>Leadership</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-puzzle-piece"></i></div>
+              <span>Problem Solving</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-clock"></i></div>
+              <span>Time Management</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-lightbulb"></i></div>
+              <span>Creativity</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-sync-alt"></i></div>
+              <span>Adaptability</span>
+            </div>
+            <div class="soft-skill-item">
+              <div class="soft-skill-icon"><i class="fas fa-eye"></i></div>
+              <span>Attention to Detail</span>
+            </div>
+          </div>
+
+          <!-- Tech Badges -->
+          <div class="tech-badges">
+            <h4>Tools & Platforms</h4>
+            <div class="badge-row">
+              <span class="badge">VS Code</span>
+              <span class="badge">Vercel</span>
+              <span class="badge">Deployment</span>
+              <span class="badge">REST APIs</span>
+              <span class="badge">OOP</span>
+              <span class="badge">Agile</span>
+              <span class="badge">Flexbox</span>
+              <span class="badge">CSS Grid</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE SECTION ===================== -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <p class="section-subtitle">Real-world impact through code</p>
+      </div>
+
+      <div class="exp-timeline">
+
+        <!-- Mizu Platform -->
+        <div class="exp-item reveal-left">
+          <div class="exp-connector">
+            <div class="exp-dot primary"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-company-logo">
+                  <i class="fas fa-water"></i>
+                </div>
+                <div>
+                  <h3>Mizu Platform</h3>
+                  <span class="exp-role">Web Developer & Project Contributor</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>2026 – Present</span>
+                <span class="exp-type current-badge">Current</span>
+              </div>
+            </div>
+            <div class="exp-tech-row">
+              <span class="exp-tech">HTML5</span>
+              <span class="exp-tech">CSS3</span>
+              <span class="exp-tech">JavaScript</span>
+              <span class="exp-tech">React.js</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Engineered and deployed responsive frontend architecture using React.js, HTML5, and CSS3 across the full development lifecycle from concept to production.</li>
+              <li>Drove user acquisition to <strong>2,500+ active users within 12 days</strong> of release through optimized UI performance and cross-device compatibility.</li>
+              <li>Built <strong>10+ reusable React.js UI components</strong>, reducing page load time and improving user engagement through clean code architecture.</li>
+              <li>Collaborated cross-functionally with designers and developers for seamless REST API integration and consistent cross-browser compatibility.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HackUtsav -->
+        <div class="exp-item reveal-right">
+          <div class="exp-connector">
+            <div class="exp-dot secondary"></div>
+            <div class="exp-line"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-company-logo secondary">
+                  <i class="fas fa-gas-pump"></i>
+                </div>
+                <div>
+                  <h3>Fuel Finder – HackUtsav</h3>
+                  <span class="exp-role">Frontend Developer (Hackathon)</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>April 2026</span>
+                <span class="exp-type hackathon-badge">Hackathon</span>
+              </div>
+            </div>
+            <p class="exp-org"><i class="fas fa-location-dot"></i> D.Y. Patil, Kasba Bawada</p>
+            <div class="exp-tech-row">
+              <span class="exp-tech">HTML5</span>
+              <span class="exp-tech">CSS3</span>
+              <span class="exp-tech">JavaScript</span>
+              <span class="exp-tech">React.js</span>
+              <span class="exp-tech">REST APIs</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Developed a full-featured web platform enabling users to locate nearby petrol pumps, CNG stations, and EV charging stations.</li>
+              <li>Implemented real-time station availability tracking, capacity monitoring, and live fuel price display using REST API integration.</li>
+              <li>Built user-specific fuel expense tracking module and assisted in integrating AI-powered customer support features.</li>
+              <li>Delivered a fully functional, deployment-ready prototype within competitive hackathon timelines.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Hackanote -->
+        <div class="exp-item reveal-left">
+          <div class="exp-connector">
+            <div class="exp-dot accent"></div>
+          </div>
+          <div class="exp-card glass-card">
+            <div class="exp-header">
+              <div class="exp-company-info">
+                <div class="exp-company-logo accent">
+                  <i class="fas fa-heartbeat"></i>
+                </div>
+                <div>
+                  <h3>Early Diabetes Prediction – Hackanote</h3>
+                  <span class="exp-role">Web Developer & Team Member (Hackathon)</span>
+                </div>
+              </div>
+              <div class="exp-date">
+                <i class="fas fa-calendar-alt"></i>
+                <span>May 2026</span>
+                <span class="exp-type hackathon-badge">Hackathon</span>
+              </div>
+            </div>
+            <p class="exp-org"><i class="fas fa-location-dot"></i> KBP, Satara</p>
+            <div class="exp-tech-row">
+              <span class="exp-tech">Python</span>
+              <span class="exp-tech">JavaScript</span>
+              <span class="exp-tech">React.js</span>
+              <span class="exp-tech">Tesseract OCR</span>
+              <span class="exp-tech">Machine Learning</span>
+            </div>
+            <ul class="exp-bullets">
+              <li>Built responsive healthcare dashboards in Python and JavaScript for visualization of child health records and diagnostic reports.</li>
+              <li>Developed OCR-based document processing interface using Tesseract OCR and Python for automated health report extraction.</li>
+              <li>Supported AI-driven prediction workflows integrating ML models trained on Kaggle datasets.</li>
+              <li>Contributed to solution architecture, project presentation, and live demonstration of end-to-end software.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJECTS SECTION ===================== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">My <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Code that shipped, design that clicked</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="filter-tabs reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="ecommerce">E-Commerce</button>
+        <button class="filter-btn" data-filter="frontend">Frontend</button>
+        <button class="filter-btn" data-filter="react">React</button>
+      </div>
+
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Jewellery Website -->
+        <div class="project-card glass-card reveal" data-category="ecommerce">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+            <div class="project-thumb-icon"><i class="fas fa-gem"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Jewellery-website/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015/Jewellery-website" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">E-Commerce</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Jewellery Website</h3>
+            <p>Premium e-commerce interface with elegant product galleries and optimized UI components, enhancing product discoverability and user engagement by 40%.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Jewellery-website/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cakery Website -->
+        <div class="project-card glass-card reveal" data-category="frontend">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #fa709a, #fee140);">
+            <div class="project-thumb-icon"><i class="fas fa-birthday-cake"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Cakery-website/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">Frontend</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Cakery Website</h3>
+            <p>Responsive bakery platform showcasing 50+ products with optimized UI performance, reducing page load time by 20% through clean code practices.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Cakery-website/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Medical Healthcare Website -->
+        <div class="project-card glass-card reveal" data-category="frontend">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+            <div class="project-thumb-icon"><i class="fas fa-hospital"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Medical-website/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">Healthcare</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Medical Healthcare Website</h3>
+            <p>Informational healthcare platform with appointment and service modules, improving mobile accessibility and reducing navigation complexity by 30%.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Medical-website/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Online Food Delivery -->
+        <div class="project-card glass-card reveal" data-category="ecommerce react">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #f7971e, #ffd200);">
+            <div class="project-thumb-icon"><i class="fas fa-utensils"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Online-Food-Delivery/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">E-Commerce</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Online Food Delivery</h3>
+            <p>Interactive food ordering interface with menu categorization, cart simulation, and REST API-ready architecture, enhancing user navigation efficiency by 35%.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Online-Food-Delivery/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Porsche Watch -->
+        <div class="project-card glass-card reveal" data-category="ecommerce">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #2c3e50, #4ca1af);">
+            <div class="project-thumb-icon"><i class="fas fa-clock"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Porches-Website/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">Luxury</span>
+              <span class="project-year">2025</span>
+            </div>
+            <h3>Porsche Watch Website</h3>
+            <p>Luxury watch showcase with responsive product galleries and media asset optimization, reducing load time by 25% and elevating the premium user experience.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Porches-Website/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Restaurant Landing Page -->
+        <div class="project-card glass-card reveal" data-category="frontend">
+          <div class="project-thumb" style="background: linear-gradient(135deg, #a18cd1, #fbc2eb);">
+            <div class="project-thumb-icon"><i class="fas fa-concierge-bell"></i></div>
+            <div class="project-overlay">
+              <a href="https://tejupatil015.github.io/Restaurant-Landing-Page/" target="_blank" rel="noopener" class="overlay-btn">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="overlay-btn outline">
+                <i class="fab fa-github"></i> Code
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-meta">
+              <span class="project-category">Landing Page</span>
+              <span class="project-year">2026</span>
+            </div>
+            <h3>Restaurant Landing Page</h3>
+            <p>Conversion-focused landing page with strategic call-to-action sections and optimized content hierarchy, increasing user interaction by 30%.</p>
+            <div class="project-tech">
+              <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="https://tejupatil015.github.io/Restaurant-Landing-Page/" target="_blank" rel="noopener" class="project-link primary">
+                <i class="fas fa-rocket"></i> Live Demo
+              </a>
+              <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="projects-cta reveal">
+        <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All Projects on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ACHIEVEMENTS SECTION ===================== -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Milestones</span>
+        <h2 class="section-title">My <span class="gradient-text">Achievements</span></h2>
+        <p class="section-subtitle">Impact that speaks louder than words</p>
+      </div>
+
+      <!-- Counter Cards -->
+      <div class="counter-grid reveal">
+        <div class="counter-card glass-card">
+          <div class="counter-icon"><i class="fas fa-users"></i></div>
+          <div class="counter-number" data-target="2500">0</div>
+          <div class="counter-plus">+</div>
+          <div class="counter-label">Active Users on Mizu</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon secondary"><i class="fas fa-code"></i></div>
+          <div class="counter-number" data-target="5000">0</div>
+          <div class="counter-plus">+</div>
+          <div class="counter-label">Lines of Code Written</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon accent"><i class="fas fa-project-diagram"></i></div>
+          <div class="counter-number" data-target="10">0</div>
+          <div class="counter-plus">+</div>
+          <div class="counter-label">Web Projects Built</div>
+        </div>
+        <div class="counter-card glass-card">
+          <div class="counter-icon green"><i class="fas fa-trophy"></i></div>
+          <div class="counter-number" data-target="2">0</div>
+          <div class="counter-plus"></div>
+          <div class="counter-label">Hackathons Competed</div>
+        </div>
+      </div>
+
+      <!-- Achievement Cards -->
+      <div class="achievements-grid">
+        <div class="achievement-card glass-card reveal-left">
+          <div class="achievement-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <div class="achievement-content">
+            <div class="achievement-badge">🚀 Platform Impact</div>
+            <h3>Mizu Platform Launch</h3>
+            <p>Contributed to the Mizu platform launch, which reached <strong>2,500+ active users within just 12 days</strong> of product release, demonstrating real-world software deployment impact and production-quality development.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal">
+          <div class="achievement-icon secondary">
+            <i class="fas fa-code-branch"></i>
+          </div>
+          <div class="achievement-content">
+            <div class="achievement-badge">💻 Developer Milestone</div>
+            <h3>5,000+ Lines of Code</h3>
+            <p>Collectively developed over <strong>5,000+ lines of HTML, CSS, and JavaScript code</strong> across 10+ personal web development projects, demonstrating consistent dedication and technical growth.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-right">
+          <div class="achievement-icon accent">
+            <i class="fas fa-medal"></i>
+          </div>
+          <div class="achievement-content">
+            <div class="achievement-badge">🏆 Hackathon Champion</div>
+            <h3>HackUtsav 2026 & Hackanote 2026</h3>
+            <p>Participated in <strong>HackUtsav 2026</strong> (D.Y. Patil, Kasba Bawada) and <strong>Hackanote 2026</strong> (KBP, Satara), delivering working software prototypes under competitive time constraints in both events.</p>
+          </div>
+        </div>
+
+        <div class="achievement-card glass-card reveal-left">
+          <div class="achievement-icon green">
+            <i class="fas fa-git-alt"></i>
+          </div>
+          <div class="achievement-content">
+            <div class="achievement-badge">⚙️ DevOps Skills</div>
+            <h3>Git & Version Control</h3>
+            <p>Demonstrated proficiency in <strong>Git, GitHub version control, and agile project management</strong> throughout independent and collaborative project development, including deployment via GitHub Pages and Vercel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== INTERNSHIP SECTION ===================== -->
+  <section class="section internship-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I'm Looking For</span>
+        <h2 class="section-title">Internship <span class="gradient-text">Goals</span></h2>
+        <p class="section-subtitle">Ready to contribute, learn, and grow</p>
+      </div>
+
+      <div class="internship-grid">
+        <div class="internship-card glass-card reveal-left">
+          <div class="internship-icon"><i class="fas fa-search"></i></div>
+          <h3>Seeking Roles In</h3>
+          <ul class="internship-list">
+            <li><i class="fas fa-chevron-right"></i> Software Engineering Internship</li>
+            <li><i class="fas fa-chevron-right"></i> Backend Development Internship</li>
+            <li><i class="fas fa-chevron-right"></i> Frontend / React.js Development</li>
+            <li><i class="fas fa-chevron-right"></i> Full-Stack Web Development</li>
+            <li><i class="fas fa-chevron-right"></i> Python Development / ML Projects</li>
+          </ul>
+        </div>
+
+        <div class="internship-card glass-card reveal">
+          <div class="internship-icon secondary"><i class="fas fa-heart"></i></div>
+          <h3>Areas of Interest</h3>
+          <ul class="internship-list">
+            <li><i class="fas fa-chevron-right"></i> React.js & Modern Frontend Frameworks</li>
+            <li><i class="fas fa-chevron-right"></i> REST API Design & Integration</li>
+            <li><i class="fas fa-chevron-right"></i> Healthcare Technology & EdTech</li>
+            <li><i class="fas fa-chevron-right"></i> Product Development from Zero to Launch</li>
+            <li><i class="fas fa-chevron-right"></i> Machine Learning Applications</li>
+          </ul>
+        </div>
+
+        <div class="internship-card glass-card reveal-right">
+          <div class="internship-icon accent"><i class="fas fa-flag"></i></div>
+          <h3>Career Goals</h3>
+          <ul class="internship-list">
+            <li><i class="fas fa-chevron-right"></i> Work with an engineering team on production systems</li>
+            <li><i class="fas fa-chevron-right"></i> Build user-facing features that reach thousands</li>
+            <li><i class="fas fa-chevron-right"></i> Grow skills in backend architecture</li>
+            <li><i class="fas fa-chevron-right"></i> Contribute to open-source and community projects</li>
+            <li><i class="fas fa-chevron-right"></i> Transition to full-stack engineering role</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="internship-cta reveal">
+        <p>Currently open to <strong>software engineering, backend, and web development internships</strong>. I bring real project experience, fast learning ability, and a passion for building impactful products.</p>
+        <a href="mailto:patil.t.tejashri@gmail.com" class="btn btn-primary">
+          <i class="fas fa-paper-plane"></i> Get In Touch
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CONTACT SECTION ===================== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="section-subtitle">Open to opportunities, collaborations, and conversations</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info reveal-left">
+          <h3>Contact Details</h3>
+          <p>Whether you have an internship opportunity, a project idea, or just want to say hi — my inbox is always open!</p>
+
+          <div class="contact-links">
+            <a href="mailto:patil.t.tejashri@gmail.com" class="contact-link-card">
+              <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact-link-label">Email</span>
+                <span class="contact-link-value">patil.t.tejashri@gmail.com</span>
+              </div>
+            </a>
+            <a href="tel:+917972347936" class="contact-link-card">
+              <div class="contact-link-icon secondary"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact-link-label">Phone</span>
+                <span class="contact-link-value">+91 7972347936</span>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/patiltejashree/" target="_blank" rel="noopener" class="contact-link-card">
+              <div class="contact-link-icon accent"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <span class="contact-link-label">LinkedIn</span>
+                <span class="contact-link-value">linkedin.com/in/patiltejashree</span>
+              </div>
+            </a>
+            <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" class="contact-link-card">
+              <div class="contact-link-icon dark"><i class="fab fa-github"></i></div>
+              <div>
+                <span class="contact-link-label">GitHub</span>
+                <span class="contact-link-value">github.com/tejupatil015</span>
+              </div>
+            </a>
+            <a href="https://mizu.co.in" target="_blank" rel="noopener" class="contact-link-card">
+              <div class="contact-link-icon green"><i class="fas fa-globe"></i></div>
+              <div>
+                <span class="contact-link-label">Website</span>
+                <span class="contact-link-value">mizu.co.in</span>
+              </div>
+            </a>
+            <div class="contact-link-card no-link">
+              <div class="contact-link-icon purple"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact-link-label">Location</span>
+                <span class="contact-link-value">Kolhapur, Maharashtra, India</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-wrap glass-card reveal-right">
+          <h3>Send a Message</h3>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <div class="input-wrap">
+                <i class="fas fa-user"></i>
+                <input type="text" id="name" name="name" placeholder="John Doe" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <div class="input-wrap">
+                <i class="fas fa-envelope"></i>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="input-wrap">
+                <i class="fas fa-tag"></i>
+                <input type="text" id="subject" name="subject" placeholder="Internship Opportunity" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <div class="input-wrap textarea-wrap">
+                <i class="fas fa-comment-dots"></i>
+                <textarea id="message" name="message" rows="5" placeholder="Hi Tejashri, I'd like to connect about..." required></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary full-width" id="submitBtn">
+              <i class="fas fa-paper-plane"></i>
+              <span>Send Message</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              <i class="fas fa-check-circle"></i>
+              <span>Message sent! I'll get back to you soon.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">Tejashri<span>.</span></a>
+          <p>Electronics & Telecom Engineer · Software Developer · React Enthusiast</p>
+          <div class="footer-socials">
+            <a href="mailto:patil.t.tejashri@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            <a href="https://linkedin.com/in/patiltejashree/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/tejupatil015" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://mizu.co.in" target="_blank" rel="noopener" aria-label="Website"><i class="fas fa-globe"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="https://github.com/tejupatil015" target="_blank" rel="noopener">GitHub Profile</a></li>
+            <li><a href="https://mizu.co.in" target="_blank" rel="noopener">Mizu Platform</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:patil.t.tejashri@gmail.com">patil.t.tejashri@gmail.com</a></li>
+            <li><a href="tel:+917972347936">+91 7972347936</a></li>
+            <li><span class="footer-location"><i class="fas fa-map-marker-alt"></i> Kolhapur, MH</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Tejashri Patil</strong>. Designed & Built with <i class="fas fa-heart accent-heart"></i> by Tejashri.</p>
+        <div class="footer-bottom-links">
+          <span>Electronics & Telecom · Software Engineering · Web Development</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
